@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+:root{
+    --h2-margin:  7vh 0px 3vh 0px;
+    --h3-margin: 3vh;
+    --green-color: #14d9b8
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    text-decoration: none;
+    
+    border:none;
+    outline:0;
+    
+    
+}
+.size_1{
+    height: 100vh;
+  
+   
+
+}
+body {
+    color: #161616;
+    font-size: 2.5vh;
+    
+   
+}
+.container {
+    margin: 0px 2.5vh;
+    text-align: center;
+   
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 1;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(138, 138, 138, 0.5);
+    background-color: #fff;
+    
+}
+.nav_menu {
+
+    z-index: 2;
+   padding: 1vh 2.5vh;
+   display: flex;
+   align-items: center;
+
+   
+   font-weight: bold;
+}
+.btn_menu {
+    margin-left: auto;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.btn_icon {
+    font-size:1.4rem;
+    color: #161616;
+  
+}
+.menu_responsive {
+    
+    
+    background-color: #0e2431;
+    right: 0;
+    position: fixed;
+    width: 14em;
+    height: 100vh;
+    transform:translateX(100%);
+    transition: 200ms linear;
+ 
+}
+.menu_itens{
+    padding-top: 10vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding:4vh;
+}
+.menu_itens .active{
+    padding:0px 0.3vh 0.3vh 0.3vh;
+    border-bottom: 2px solid var(--green-color);
+
+}
+
+.menu_itens li {
+    margin-bottom: 4vh;
+}
+.menu_itens li a{
+    color: #fff;
+    
+}
+
+.active_menu {
+    transform: translateX(0%);
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.my_bio{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.flex_bio {
+    align-self: center;
+    flex-direction: column;
+
+} 
+
+.flex_bio h1 {
+    margin: 4vh 0px 1.5vh 0px;
+}
+.flex_bio h2 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-bottom: 4vh;
+}
+.flex_bio .img_icon img {
+    width: 30vh;
+    padding: 5vh;
+    border: 2px solid var(--green-color);
+    border-radius: 180px;
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    transition: 1000ms linear;
+   
+    
+}
+.clicked {
+  
+    background-color: rgba(0,0,0,.50);
+    filter: brightness(50%);
+    
+    
+}
+   
+.social_networks a {
+    font-size: 1.6rem;
+    margin: 0px 1vh;
+    color: #000000;
+  
+}
+
+.icon_social {
+    padding: 0.7vh;
+    border: 2px solid #000000;
+    border-radius: 180px;
+    color:#000000;
+}
+
+
+/*CONTENT*/
+.content h2{
+    padding: 0 2vh;
+    margin: var(--h2-margin);
+    color:var(--green-color);
+    display: inline-block;
+    border-bottom: 3px  var(--green-color) solid; 
+ 
+}
+.content h3 {
+    margin: 3vh 0px;
+}
+
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.story h2 {
+    margin-top: 0;
+}
+
+
+.story img {
+    border: 2px solid #000000;
+    border-radius: 6px;
+
+}
+
+/*skills*/
+.item {
+margin: 2vh 0;
+font-weight: bold;
+
+box-shadow: 0 4px 25px rgba(14,36,49,.15);
+}
+.skills h2 {
+    margin: 7vh 7vh 4vh 7vh;
+
+}
+.skills_content {
+    margin: 5vh 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.skill_item{
+    padding: 2vh 2vh;
+   display: flex;
+   flex-direction: row;
+     align-items: center;
+ 
+   
+}
+.skill_item .icon_bar {
+    font-size:4vh;
+    margin-right: 2vh;
+    color: var(--green-color)
+}
+.skill_item .porcentage {
+    margin-left: auto;
+}
+.item .bar {
+    left: 0;
+    bottom: 0;
+    background-color: var(--green-color);
+    height: .25rem;
+    
+}
+.item .skill_html {
+    width: 90%;
+}
+.item .skill_css3 {
+    width: 92%;
+}
+.item .skill_js{
+    width: 85%;
+}
+.item .skill_php {
+    width: 80%;
+}
+.item .skill_py{
+    width: 80%;
+}
+
+.skills_img img {
+    display: none;
+}
+
+/*CONTACT*/
+
+.contact {
+    margin: 0 auto;
+ 
+
+}
+.input_itens {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+
+}
+.input_itens input, textarea {
+    font-weight: bold;
+    padding: 1vh;
+    border:2px solid #000000;
+    margin: 1.5vh 0px;
+    border-radius: 4px;
+   
+}
+.input_itens textarea{
+    height: 20vh;
+
+   
+}
+.input_itens input[type='submit'] {
+    background-color: var(--green-color);
+    color: #fff;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5vh 0px; 
+    background-color: #0e2431;
+    color: #fff; 
+    text-align: center;
+    margin: 10vh 0 0 0;
+}
+footer .social_footer {
+    margin: 2vh 0px;
+}
+footer .social_footer span{
+    margin: 1vh;
+    
+}
+footer .social_footer a {
+    color: red;
+}
+
+.icon_footer {
+    color: #fff;
+    border: 2px solid #fff;
+}
+/* ----------------------------------------------------------------------------------------- */
+/* Telas Pequenas */
+@media (min-width: 249px) and (max-width: 480px) 
+{
+
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* Telas Médias */
+@media (min-width: 481px)  and (max-width: 1024px) 
+{
+
+    .my_bio {
+        margin-top: 5%;
+    }
+    body {
+        font-size:1.3rem
+    }
+    .input_itens {
+        width: 30rem;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* Telas Grandes */
+@media screen and (min-width: 1024px) 
+{
+    
+    .container {
+        margin: 0 14vh;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 12.5vh;
+        
+    }
+    .btn_menu {
+        display: none;
+    }
+    .menu_responsive{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        transform: translate(0);
+        background-color: transparent;
+        height: auto;
+        
+    }
+    .menu_itens{
+
+        
+
+        color: black;
+        padding: 0;
+        flex-direction: row;
+        align-items: center;
+        margin: auto 0px
+    }
+    .menu_itens li{
+        margin:0
+    }
+    .menu_itens li a{
+        color:black;
+        margin-right: 4vh;
+
+        
+    }
+
+
+
+
+
+
+   
+
+
+    /*ABOUTME*/
+
+    .content h2 {
+        margin-bottom: 12vh
+    }
+    .story_desc {
+        display: flex;
+        flex-direction: row;
+
+    }
+    .story img {
+        flex-shrink: 0;
+        width: 40vh;
+        align-self: center;
+        margin-right: 4vh;
+    }
+   
+    .skills {
+        margin: 7vh 0px;
+    }
+    .skills h2 {
+        margin: 4vh 0px 2vh 0px;
+    }
+    
+ 
+    .skills_principal {
+        display: flex;
+        align-items: center;
+        margin: 7vh 0px;
+
+    
+    }
+    .skills_img img {
+        display: flex;
+        flex-shrink: 0;
+        width: 50vh;
+        margin: 0 5%;
+        padding: 3vh 8vh;
+        box-shadow: 0 4px 25px rgba(14,36,49,.15);
+        border-radius: 10px;
+        margin-top: 30vh;
+    }
+    .contact h2 {
+        margin: var(--h2-margin);
+        
+    }
+
+    .input_itens {
+        width: 80vh;
+    }
+}
+/* Geral */
