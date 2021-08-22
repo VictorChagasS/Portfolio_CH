@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+:root{
+    --h2-margin:  7vh 0px 3vh 0px;
+    --h3-margin: 3vh;
+    --green-color: #14d9b8
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    text-decoration: none;
+    
+    border:none;
+    outline:0;
+    
+    
+}
+.size_1{
+    
+    height: 100vh;
+
+}
+body {
+    color: #161616;
+    font-size: 2.5vh;
+    
+   
+}
+.container {
+        margin: 0 14vh;
+        text-align: center;
+    
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.nav_menu {
+
+   padding: 1vh 2.5vh;
+   display: flex;
+   align-items: center;
+   font-weight: bold;
+}
+.menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 12.5vh;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(138, 138, 138, 0.5);
+    background-color: #fff;
+}
+.menu_itens {
+    list-style-type: none;
+    
+    margin: auto 0px
+}
+
+.menu_itens li {
+    margin:0
+}
+.menu_itens li a{
+    color:black;
+    margin-right: 4vh;
+
+   
+}
+
+.content h2{
+    padding: 0 2vh;
+    margin: var(--h2-margin);
+    color:var(--green-color);
+    display: inline-block;
+    border-bottom: 3px  var(--green-color) solid; 
+ 
+}
+.content h3 {
+    margin: 3vh 0px;
+}
+
+
+.integrador {
+    margin-top: 6vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.integ_desc {
+    display: flex;
+    flex-direction: row;
+
+}
+.integrador img {
+    flex-shrink: 0;
+    width: 40vh;
+    align-self: center;
+    margin-right: 4vh;
+    border: 3px solid #000000;
+}
+
+#integrador1{
+    width: 350px;
+   
+}
+#integrador2{
+    width: 780px;
+}
+#info {
+    padding: 0.5vh;
+}
+.integrador a {
+    color: #000000;
+    font-weight: bold;
+}
+#l2_img{
+    margin-left: 10px;
+}
+.l2 {
+    align-items: center;
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5vh 0px; 
+    background-color: #0e2431;
+    color: #fff; 
+    text-align: center;
+    margin: 10vh 0 0 0;
+}
+footer .social_footer {
+    margin: 2vh 0px;
+}
+footer .social_footer span{
+    margin: 1vh;
+    
+}
+footer .social_footer a {
+    color: red;
+}
+
+.icon_footer {
+    color: #fff;
+    border: 2px solid #fff;
+}
+.icon_social {
+    padding: 0.7vh;
+    border: 2px solid #fff;
+    border-radius: 180px;
+    color:#fff;
+}
