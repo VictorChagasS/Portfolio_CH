@@ -49,7 +49,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0px 12.5vh;
+    
     position: fixed;
     width: 100%;
     top: 0%;
@@ -91,6 +91,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .integ_desc {
     display: flex;
@@ -104,13 +105,20 @@ body {
     margin-right: 4vh;
     border: 3px solid #000000;
 }
+#mobile_img{
+    display: none;
+}
 
 #integrador1{
     width: 350px;
+
+
    
 }
 #integrador2{
+    
     width: 780px;
+
 }
 #info {
     padding: 0.5vh;
@@ -159,3 +167,56 @@ footer .social_footer a {
     border-radius: 180px;
     color:#fff;
 }
+
+@media screen and (min-width: 1024px) 
+{
+ .menu {
+    padding: 0px 12.5vh;
+ }
+ 
+}
+
+@media (min-width: 200px)  and (max-width: 1250px) 
+ {
+    .container {
+        margin: 0 6vh;
+
+    
+}
+    .integ_desc{
+        flex-direction: column;
+    }
+
+    .reverse{
+        flex-direction: column-reverse !important;
+    }
+    .ordem1{
+        order: -1;
+    }
+    #integrador2{
+        width: 100%;
+        margin: 0;
+        display: none;
+    }
+    #integrador1{
+        margin: 0;
+    }
+
+    #l2_img{
+        margin: 0;
+    }
+    #mobile_img{
+        display: block;
+        margin: 0 0 15px 0;
+    }
+
+ }
+ @media (max-width: 380px) {
+       #l2_img{
+     width: 100%;
+    }
+    #integrador1{
+ 
+      width: 100%;
+         }
+ }
