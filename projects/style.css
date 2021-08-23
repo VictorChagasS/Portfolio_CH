@@ -138,6 +138,10 @@ body {
     align-items: center;
 }
 
+.robot_img{
+    margin-top: 3vh;
+}
+
 
 footer {
     width: 100%;
@@ -160,19 +164,23 @@ footer .social_footer span{
 footer .social_footer a {
     color: red;
 }
+.social_footer{
+    height: 40px;
+}
 
 .icon_footer {
     color: #fff;
     border: 2px solid #fff;
 }
 .icon_social {
+   
     padding: 0.7vh;
     border: 2px solid #fff;
     border-radius: 180px;
     color:#fff;
 }
 .icon_social:hover{
-    font-size: 40px;
+    font-size: 30px;
 }
 @media screen and (min-width: 1024px) 
 {
@@ -189,6 +197,11 @@ footer .social_footer a {
 
     
 }
+.robot_img{
+    margin-top: 3vh;
+    margin-right: 0!important
+   
+}
 .scroll1{
     padding-bottom: 0;
 }
@@ -203,7 +216,7 @@ footer .social_footer a {
         order: -1;
     }
     #integrador2{
-        width: 100%;
+      width: 100%;
         margin: 0;
         display: none;
     }
@@ -215,8 +228,10 @@ footer .social_footer a {
         margin: 0;
     }
     #mobile_img{
+        width: 350px;
         display: block;
         margin: 0 0 15px 0;
+        
     }
 
  }
