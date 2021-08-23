@@ -72,6 +72,9 @@ body {
 
    
 }
+.scroll1{
+    padding-bottom: 5vh;
+}
 
 .content h2{
     padding: 0 2vh;
@@ -92,6 +95,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    
 }
 .integ_desc {
     display: flex;
@@ -167,7 +171,9 @@ footer .social_footer a {
     border-radius: 180px;
     color:#fff;
 }
-
+.icon_social:hover{
+    font-size: 40px;
+}
 @media screen and (min-width: 1024px) 
 {
  .menu {
@@ -182,6 +188,9 @@ footer .social_footer a {
         margin: 0 6vh;
 
     
+}
+.scroll1{
+    padding-bottom: 0;
 }
     .integ_desc{
         flex-direction: column;

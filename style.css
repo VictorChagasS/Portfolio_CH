@@ -153,12 +153,18 @@ body {
     color: #000000;
   
 }
+.social_networks{
+    height: 40px;
+}
 
 .icon_social {
     padding: 0.7vh;
     border: 2px solid #000000;
     border-radius: 180px;
     color:#000000;
+}
+.icon_social:hover{
+    font-size: 40px;
 }
 
 
